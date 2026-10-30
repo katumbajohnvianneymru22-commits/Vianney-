@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Vianney Rabbit Farm for enquiries and information.">
+  <title>Contact Us | Vianney Rabbit Farm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #243126;
+      background: #f3f7f1;
+    }
+
+    header {
+      background: #214d35;
+      padding: 18px 7%;
+      color: white;
+    }
+
+    .topbar {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: #d6efb9;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #dcebd5, #f3f7f1);
+      text-align: center;
+      padding: 65px 20px 55px;
+    }
+
+    .hero h1 {
+      color: #214d35;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: auto;
+      color: #536457;
+      font-size: 1.05rem;
+    }
+
+    main {
+      width: min(1050px, 90%);
+      margin: 55px auto;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(28, 61, 39, .08);
+    }
+
+    .panel h2 {
+      color: #214d35;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      color: #68756b;
+      margin-bottom: 24px;
+    }
+
+    .field {
+      margin-bottom: 17px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 7px;
+      color: #344b39;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d5dfd5;
+      border-radius: 8px;
+      background: #fbfdfb;
+      color: #243126;
+      font: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #39784e;
+      box-shadow: 0 0 0 3px rgba(57, 120, 78, .12);
+    }
+
+    textarea {
+      min-height: 145px;
+      resize: vertical;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 13px 23px;
+      background: #28613e;
+      color: white;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, transform .2s;
+    }
+
+    button:hover {
+      background: #19472c;
+      transform: translateY(-1px);
+    }
+
+    .details {
+      background: #214d35;
+      color: white;
+    }
+
+    .details h2 {
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    .detail-item {
+      padding: 17px 0;
+      border-bottom: 1px solid rgba(255,255,255,.2);
+    }
+
+    .detail-item:last-child {
+      border-bottom: 0;
+    }
+
+    .detail-item strong {
+      display: block;
+      color: #d6efb9;
+      margin-bottom: 5px;
+    }
+
+    .detail-item a {
+      color: white;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #183b29;
+      color: #e8f1e8;
+      text-align: center;
+      padding: 22px 15px;
+      margin-top: 65px;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        padding: 24px;
+      }
+
+      main {
+        margin: 35px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="brand">Vianney Rabbit Farm</div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html" aria-current="page">Contact</a>
+        <a href="end.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We would be happy to hear from you. Contact Vianney Rabbit Farm for enquiries, information and assistance.</p>
+  </section>
+
+  <main>
+    <div class="contact-layout">
+      <section class="panel">
+        <h2>Send Us a Message</h2>
+        <p class="intro">Fill in the form below. When you select Send Message, your email application will open with your message ready to send.</p>
+
+        <form id="contactForm">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <aside class="panel details">
+        <h2>Get in Touch</h2>
+        <div class="detail-item">
+          <strong>Email</strong>
+          <a href="mailto:johnvianneykatumba86@gmail.com">johnvianneykatumba86@gmail.com</a>
+        </div>
+        <div class="detail-item">
+          <strong>Phone</strong>
+          <a href="tel:0743408225">0743408225</a><br>
+          <a href="tel:0793049402">0793049402</a>
+        </div>
+        <div class="detail-item">
+          <strong>Address</strong>
+          <span>Kalisizo - Kyotera District</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vianney Rabbit Farm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const subject = encodeURIComponent("Website enquiry from " + name);
+      const body = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + email + "\n\n" +
+        "Message:\n" + message
+      );
+
+      window.location.href =
+        "mailto:johnvianneykatumba86@gmail.com?subject=" + subject + "&body=" + body;
+    });
+  </script>
+</body>
+</html>

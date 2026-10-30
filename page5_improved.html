@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet John Vianney Katumba, the person behind Vianney Rabbit Farm.">
+  <title>About Me | Vianney Rabbit Farm</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #26332a;
+      background: #f4f8f2;
+    }
+    header {
+      background: linear-gradient(135deg, #174d2b, #2f8a45);
+      color: white;
+      text-align: center;
+      padding: 42px 18px 34px;
+    }
+    header h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 8px; }
+    header p { color: #e6f4e8; font-size: 1.05rem; }
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 14px 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.07);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #236b36;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 9px 13px;
+      border-radius: 7px;
+      transition: background .2s, color .2s;
+    }
+    nav a:hover, nav a[aria-current="page"] {
+      background: #e4f2e5;
+      color: #174d2b;
+    }
+    main { width: min(900px, 92%); margin: 42px auto; }
+    .about-card {
+      background: white;
+      padding: clamp(24px, 5vw, 48px);
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(28, 70, 39, .09);
+      border-top: 5px solid #39884a;
+    }
+    .eyebrow {
+      color: #39884a;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    h2 { color: #174d2b; font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 18px; }
+    .about-card p { margin: 0 0 16px; font-size: 1.05rem; }
+    .highlight {
+      margin-top: 26px;
+      padding: 20px 22px;
+      background: #edf7ed;
+      border-left: 4px solid #39884a;
+      border-radius: 8px;
+      color: #245a31;
+      font-weight: 600;
+    }
+    footer {
+      background: #174d2b;
+      color: #eaf5eb;
+      text-align: center;
+      padding: 22px 14px;
+      margin-top: 55px;
+    }
+    footer strong { color: white; letter-spacing: 2px; }
+    @media (max-width: 520px) {
+      nav { position: static; gap: 4px; }
+      nav a { padding: 8px 10px; font-size: .92rem; }
+      main { margin: 25px auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vianney Rabbit Farm</h1>
+    <p>Passion for rabbits. Commitment to responsible farming.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="page2.html">Rabbit Farming</a>
+    <a href="page3.html">Rabbit Care</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+    <a href="end.html">About the Farm</a>
+    <a href="page5.html" aria-current="page">About Me</a>
+  </nav>
+
+  <main>
+    <section class="about-card">
+      <div class="eyebrow">The person behind the farm</div>
+      <h2>About Me</h2>
+      <p>My name is <strong>John Vianney Katumba</strong>.</p>
+      <p>Since my childhood, I have had a strong love for rabbits. That passion inspired me to establish Vianney Rabbit Farm.</p>
+      <p>To me, rabbit rearing is more than just a business. I also enjoy keeping rabbits as pets, and I value the care, patience and responsibility involved in raising them.</p>
+      <div class="highlight">
+        My goal is to turn my love for rabbits into a meaningful farming venture while continuing to care for and learn about these wonderful animals.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for visiting Vianney Rabbit Farm.</p>
+    <p><strong>&lt;&lt;&lt; VIAN &gt;&gt;&gt;</strong></p>
+  </footer>
+</body>
+</html>

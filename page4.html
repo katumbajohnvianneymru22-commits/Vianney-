@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the activities and values of Vianney Rabbit Farm.">
+  <title>Our Farm Activities | Vianney Rabbit Farm</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #26352b;
+      background: #f4f8f5;
+    }
+    .site-header {
+      background: #173d2b;
+      color: #fff;
+      padding: 22px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 800; letter-spacing: 1px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 11px;
+      border-radius: 7px;
+      transition: background .2s ease;
+    }
+    nav a:hover, nav a[aria-current="page"] { background: rgba(255,255,255,.16); color: #c8f0d0; }
+    .hero {
+      text-align: center;
+      padding: 76px 20px 68px;
+      background: linear-gradient(135deg, #dcefe0, #b5d9bd);
+    }
+    .hero .tag {
+      color: #28613a;
+      text-transform: uppercase;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      color: #173d2b;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .hero p { max-width: 720px; margin: auto; font-size: 1.08rem; }
+    main { width: min(1100px, 92%); margin: 48px auto; }
+    .intro { max-width: 820px; text-align: center; margin: 0 auto 34px; }
+    .intro h2, .closing h2 { color: #173d2b; font-size: clamp(1.55rem, 3vw, 2rem); margin-bottom: 10px; }
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .activity {
+      background: #fff;
+      padding: 26px;
+      border-radius: 15px;
+      border: 1px solid #e2ece4;
+      box-shadow: 0 5px 18px rgba(23,61,43,.06);
+    }
+    .activity .number {
+      display: inline-grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #e2f1e5;
+      color: #23613b;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .activity h3 { color: #23613b; font-size: 1.2rem; margin-bottom: 8px; }
+    .activity p { color: #536258; }
+    .photo-section {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+      background: #fff;
+      border-radius: 17px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(23,61,43,.07);
+    }
+    .photo-section img {
+      width: 100%;
+      height: 100%;
+      min-height: 300px;
+      max-height: 390px;
+      display: block;
+      object-fit: cover;
+    }
+    .photo-copy { padding: 28px; }
+    .photo-copy h2 { color: #173d2b; margin-bottom: 10px; font-size: 1.6rem; }
+    .photo-copy p { color: #536258; margin-bottom: 18px; }
+    .button {
+      display: inline-block;
+      background: #287342;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 11px 18px;
+      border-radius: 8px;
+      transition: background .2s ease;
+    }
+    .button:hover { background: #174d2b; }
+    .closing {
+      margin-top: 42px;
+      padding: 32px 24px;
+      text-align: center;
+      background: #e7f3e9;
+      border-radius: 15px;
+    }
+    .closing p { max-width: 700px; margin: 0 auto 18px; }
+    footer {
+      margin-top: 55px;
+      background: #173d2b;
+      color: #eaf5eb;
+      text-align: center;
+      padding: 24px 15px;
+    }
+    footer strong { color: #fff; letter-spacing: 2px; }
+    @media (max-width: 700px) {
+      .site-header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+      .activity-grid, .photo-section { grid-template-columns: 1fr; }
+      .photo-section img { min-height: 230px; max-height: 300px; }
+      .hero { padding: 58px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">VIANNEY RABBIT FARM</div>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Our Farm</a>
+      <a href="page3.html">Rabbit Care</a>
+      <a href="page4.html" aria-current="page">Farm Activities</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact.html">Contact</a>
+      <a href="end.html">About Us</a>
+      <a href="page5_improved.html">About Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="tag">Growing with passion and care</p>
+      <h1>Life at Vianney Rabbit Farm</h1>
+      <p>Rabbit farming is built on patience, responsibility and daily attention. Explore the main activities that guide our farm.</p>
+    </section>
+
+    <section class="intro">
+      <h2>What We Do on the Farm</h2>
+      <p>Our farm pages explain our approach to raising rabbits, caring for them and learning more about responsible rabbit keeping. These activities work together to support healthy animals and good farming practices.</p>
+    </section>
+
+    <section class="activity-grid" aria-label="Farm activities">
+      <article class="activity">
+        <span class="number">01</span>
+        <h3>Rabbit Breeding</h3>
+        <p>We focus on responsible breeding and giving rabbits suitable conditions. Learn more on our <a href="page2.html">Our Farm</a> page.</p>
+      </article>
+      <article class="activity">
+        <span class="number">02</span>
+        <h3>Feeding and Clean Water</h3>
+        <p>Suitable feed and a reliable supply of clean water are important parts of everyday rabbit care. Read our <a href="page3.html">Rabbit Care</a> guide.</p>
+      </article>
+      <article class="activity">
+        <span class="number">03</span>
+        <h3>Housing and Hygiene</h3>
+        <p>Clean housing, enough space and regular attention help create a better environment for rabbits.</p>
+      </article>
+      <article class="activity">
+        <span class="number">04</span>
+        <h3>Observation and Gentle Handling</h3>
+        <p>Watching the rabbits regularly helps us notice changes in their behaviour and condition. They should always be handled gently.</p>
+      </article>
+    </section>
+
+    <section class="photo-section">
+      <img src="Me feeding rabbits.png" alt="John feeding rabbits at Vianney Rabbit Farm">
+      <div class="photo-copy">
+        <h2>Care Is Part of Every Day</h2>
+        <p>Feeding and spending time with the rabbits are important parts of farm life. Our gallery shares a closer look at these experiences.</p>
+        <a class="button" href="Gallery.html">Explore Our Gallery</a>
+      </div>
+    </section>
+
+    <section class="closing">
+      <h2>Interested in Vianney Rabbit Farm?</h2>
+      <p>Explore the other pages to learn about our farm, rabbit care and the story behind the project. You can also contact us if you would like to get in touch.</p>
+      <a class="button" href="Contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for visiting Vianney Rabbit Farm.</p>
+    <p><strong>&lt;&lt;&lt; VIAN &gt;&gt;&gt;</strong></p>
+    <p>&copy; 2026 Vianney Rabbit Farm. All rights reserved.</p>
+  </footer>
+</body>
+</html>

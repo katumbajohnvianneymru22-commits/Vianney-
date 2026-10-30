@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the basics of caring for rabbits at Vianney Rabbit Farm.">
+  <title>Rabbit Care | Vianney Rabbit Farm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #29382d;
+      background: #f4f7f1;
+    }
+
+    header {
+      background: #214d35;
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .nav-wrap {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: #d6efb9;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #dcebd5, #f4f7f1);
+    }
+
+    .eyebrow {
+      color: #39784e;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      color: #214d35;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 690px;
+      margin: auto;
+      color: #536457;
+      font-size: 1.05rem;
+    }
+
+    main {
+      width: min(1050px, 90%);
+      margin: 50px auto;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #214d35;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      color: #647066;
+    }
+
+    .care-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .care-card {
+      background: white;
+      border: 1px solid #e1eae0;
+      border-radius: 14px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(28, 61, 39, .06);
+    }
+
+    .care-card h3 {
+      color: #28613e;
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .care-card p {
+      color: #647066;
+      font-size: .96rem;
+    }
+
+    .tip {
+      margin-top: 28px;
+      padding: 28px;
+      border-left: 5px solid #83a96f;
+      border-radius: 10px;
+      background: #eaf2e5;
+    }
+
+    .tip h2 {
+      color: #214d35;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .tip p {
+      color: #536457;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #28613e;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: #e5efe1;
+      color: #214d35;
+    }
+
+    .button:hover {
+      filter: brightness(.94);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 22px 15px;
+      text-align: center;
+      color: #e8f1e8;
+      background: #183b29;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 650px) {
+      .nav-wrap {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .care-grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin: 35px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">Vianney Rabbit Farm</div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="page2.html">Our Farm</a>
+        <a href="page3.html" aria-current="page">Rabbit Care</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="end.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Healthy Rabbits, Better Future</p>
+    <h1>How to Care for Rabbits</h1>
+    <p>Healthy rabbits need good food, clean water, a safe home and regular attention. Here are some important care practices.</p>
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>Basic Rabbit Care</h2>
+      <p>Consistent daily care helps rabbits stay healthy and comfortable. These are general care guidelines; feeding and health needs can vary with age, breed and condition.</p>
+    </section>
+
+    <section class="care-grid">
+      <article class="care-card">
+        <h3>1. Provide Clean Water</h3>
+        <p>Make fresh, clean drinking water available at all times. Check water containers daily and clean them regularly.</p>
+      </article>
+
+      <article class="care-card">
+        <h3>2. Give Suitable Feed</h3>
+        <p>Provide suitable hay or grass and a balanced rabbit feed. Introduce new foods gradually and avoid sudden changes in diet.</p>
+      </article>
+
+      <article class="care-card">
+        <h3>3. Keep Housing Clean</h3>
+        <p>Keep the rabbit house dry, clean and well ventilated. Remove waste regularly and provide a comfortable resting area.</p>
+      </article>
+
+      <article class="care-card">
+        <h3>4. Allow Enough Space</h3>
+        <p>Provide secure housing with enough room for rabbits to move, stretch and rest comfortably. Protect them from heat, rain and predators.</p>
+      </article>
+
+      <article class="care-card">
+        <h3>5. Observe Their Health</h3>
+        <p>Check rabbits every day for changes in appetite, behaviour, movement and droppings. Seek veterinary help when a rabbit appears unwell.</p>
+      </article>
+
+      <article class="care-card">
+        <h3>6. Handle Them Gently</h3>
+        <p>Approach rabbits calmly and support their body properly when handling. Never lift a rabbit by its ears.</p>
+      </article>
+    </section>
+
+    <section class="tip">
+      <h2>Important Reminder</h2>
+      <p>A rabbit that stops eating, becomes unusually inactive or has difficulty breathing needs prompt attention from a qualified veterinary professional.</p>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="Contact.html">Contact Us</a>
+      <a class="button secondary" href="Gallery.html">View Our Gallery</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vianney Rabbit Farm. All rights reserved.</p>
+  </footer>
+</body>
+</html>

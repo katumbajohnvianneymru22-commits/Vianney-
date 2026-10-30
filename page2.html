@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover rabbit farming, care and services at Vianney Rabbit Farm.">
+  <title>Our Farm | Vianney Rabbit Farm</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: #29382d;
+      background: #f4f7f1;
+    }
+
+    header {
+      background: #214d35;
+      color: white;
+      padding: 18px 7%;
+    }
+
+    .nav-wrap {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: .95rem;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a[aria-current="page"] {
+      color: #d6efb9;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #dcebd5, #f4f7f1);
+    }
+
+    .eyebrow {
+      color: #39784e;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .8rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      color: #214d35;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #536457;
+      font-size: 1.05rem;
+    }
+
+    main {
+      width: min(1100px, 90%);
+      margin: 52px auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+      color: #214d35;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .section-heading p {
+      color: #667268;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px;
+      border-radius: 14px;
+      border: 1px solid #e3ebe0;
+      box-shadow: 0 8px 24px rgba(28, 61, 39, .06);
+    }
+
+    .number {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #e4f0df;
+      color: #28613e;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #214d35;
+      font-size: 1.15rem;
+      margin-bottom: 9px;
+    }
+
+    .card p {
+      color: #647066;
+      font-size: .96rem;
+    }
+
+    .note {
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 14px;
+      background: #214d35;
+      color: white;
+      text-align: center;
+    }
+
+    .note h2 {
+      color: #d6efb9;
+      margin-bottom: 8px;
+    }
+
+    .note p {
+      max-width: 720px;
+      margin: auto;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #28613e;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: #e5efe1;
+      color: #214d35;
+    }
+
+    .button:hover {
+      filter: brightness(.94);
+    }
+
+    footer {
+      margin-top: 65px;
+      padding: 22px 15px;
+      text-align: center;
+      color: #e8f1e8;
+      background: #183b29;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav-wrap {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 14px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        margin: 35px auto;
+      }
+
+      .card {
+        padding: 23px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">Vianney Rabbit Farm</div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="page2.html" aria-current="page">Our Farm</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Contact.html">Contact</a>
+        <a href="end.html">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">Discover Our Work</p>
+    <h1>Rabbit Farming at Vianney Rabbit Farm</h1>
+    <p>Learn about the key areas we focus on to raise healthy rabbits and encourage responsible rabbit farming.</p>
+  </section>
+
+  <main>
+    <div class="section-heading">
+      <h2>What We Focus On</h2>
+      <p>Good rabbit farming starts with daily care and proper management.</p>
+    </div>
+
+    <section class="grid" aria-label="Rabbit farming information">
+      <article class="card">
+        <span class="number">01</span>
+        <h3>Rabbit Breeding</h3>
+        <p>We focus on responsible breeding and selecting healthy rabbits for breeding purposes.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">02</span>
+        <h3>Proper Feeding</h3>
+        <p>Clean water and suitable, balanced feed are important for rabbit growth and good health.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">03</span>
+        <h3>Housing</h3>
+        <p>Rabbits need secure, clean, well-ventilated housing with enough space and protection from harsh weather.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">04</span>
+        <h3>Health and Hygiene</h3>
+        <p>Regular cleaning, observation and prompt attention to signs of illness help protect the rabbits.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">05</span>
+        <h3>Meat and Breeding Stock</h3>
+        <p>Rabbit farming can provide rabbits for meat production as well as suitable animals for breeding.</p>
+      </article>
+
+      <article class="card">
+        <span class="number">06</span>
+        <h3>Farming Knowledge</h3>
+        <p>We encourage people interested in rabbit farming to learn good management practices and plan carefully.</p>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>Interested in Rabbit Farming?</h2>
+      <p>Contact Vianney Rabbit Farm to make an enquiry and learn more about our work.</p>
+      <div class="actions">
+        <a class="button" href="Contact.html">Contact Us</a>
+        <a class="button secondary" href="Gallery.html">View Gallery</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Vianney Rabbit Farm. All rights reserved.</p>
+  </footer>
+</body>
+</html>
